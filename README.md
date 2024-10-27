@@ -1,15 +1,15 @@
-# ProfessionalGriefer Tap
+# ProfessionalGriefer's Tap
 
 ## How do I install these formulae?
 
-`brew install professionalgriefer/tap/<formula>`
+`brew install ProfessionalGriefer/tap/<formula>`
 
-Or `brew tap professionalgriefer/tap` and then `brew install <formula>`.
+Or `brew tap ProfessionalGriefer/tap` and then `brew install <formula>`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-tap "professionalgriefer/tap"
+tap "ProfessionalGriefer/tap"
 brew "<formula>"
 ```
 
