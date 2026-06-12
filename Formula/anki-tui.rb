@@ -1,17 +1,19 @@
 class AnkiTui < Formula
   desc "Keyboard-driven terminal reviewer for Anki (via AnkiConnect)"
   homepage "https://github.com/professionalgriefer/anki-tui"
-  url "https://github.com/professionalgriefer/anki-tui/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "0e9d75e61524553beecd7bc79c143d36aae5b10e255ebb7b17dda0650b5371b6"
+  url "https://github.com/professionalgriefer/anki-tui/releases/download/v0.1.0/anki-tui-aarch64-apple-darwin.tar.gz"
+  sha256 "6a1fc7af3fa7bb8b9f7851413a024ce1ace31497dbec213704f6b39f8404882c"
+  version "0.1.0"
   license "MIT"
 
-  depends_on "rust" => :build
+  depends_on :macos
+  depends_on arch: :arm64
 
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "anki-tui"
   end
 
   test do
-    assert_match "anki-tui", shell_output("#{bin}/anki-tui --version", 2)
+    assert_path_exists bin/"anki-tui"
   end
 end
