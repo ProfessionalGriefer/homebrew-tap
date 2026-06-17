@@ -1,9 +1,9 @@
 class AnkiTui < Formula
   desc "Keyboard-driven terminal reviewer for Anki (via AnkiConnect)"
   homepage "https://github.com/professionalgriefer/anki-tui"
-  url "https://github.com/professionalgriefer/anki-tui/releases/download/v0.1.5/anki-tui-aarch64-apple-darwin.tar.gz"
-  sha256 "319fb97958c5a2d078bfae25b1ffa87631b5a7e6f601e46cf5954e165f00c6dd"
-  version "0.1.5"
+  url "https://github.com/professionalgriefer/anki-tui/releases/download/v0.1.6/anki-tui-aarch64-apple-darwin.tar.gz"
+  sha256 "6aac041029c7e9ebc6efa5144a6cc274d7cdea0cec9a820b3c4299286fdc8c26"
+  version "0.1.6"
   license "MIT"
 
   depends_on :macos
